@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>foodiCious</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><h1>foo<span style="color: #DF2771; font-weight: bolder;">D</span>icious </h1></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#about">About us</a></li>
+				<li><a href="#order">Order</a></li>
+				 
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Order Now</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>At Mirchi 360, we're all about cheesy goodness!  Come on in and experience the cheesy goodness of our pizza, burgers, and other fast food favorites.</p>
+				<h5>Mirchi 360 is your go-to for fast, fresh, and flavorful pizza, burgers, and other fast food favorites.  We use the freshest ingredients to create dishes that will have you coming back for more.</h5>
+				
+			</div>
+			<div class="svg-image">
+				<img src="subjects/WhatsApp Image 2024-07-05 at 18.07.51_7b845145.jpg" alt="svg">
+			</div>
+		</div>
+		
+	</header>
+
+
+<!-- Some Popular Subjects -->
+	<div class="title" id="menu">
+		<span>Menu</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNGEkrp_rxui7oXM2IY3ErRKX9uxllUPVT-A&s">Appetizer</a></div>
+		<div class="det"><a href="#"><img src="images/burger.jpg">burgers</a></div>
+		<div class="det"><a href="#"><img src="images/pizza.jpg">pizza</a></div>
+		<div class="det"><a href="#"><img src="images/sides.jpg">sides</a></div>
+		</div></center>
+		<div class="cbox">
+		<div class="det"><a href="#"><img src="images/soup.jpg">soups</a></div>
+		<div class="det"><a href="#"><img src="images/pasta.jpg">pasta</a></div>
+		<div class="det"><a href="#"><img src="images/cakes.jpg">deserts</a></div>
+		<div class="det det-last"><a href="#"><img src="images/drinks.jpg">drinks</a></div>
+		</div>
+	</div>
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/about us.jpg">
+				</div>
+				<div class="side-text">
+					<h2></h2>
+					<p> Welcome to FastFood, your go-to destination for delicious and quick meals! Founded in 2024, we have been serving up a variety of mouth-watering dishes that satisfy cravings and bring joy to our customers' taste buds. Our mission is simple: to provide high-quality, flavorful food at lightning-fast speed, ensuring you can enjoy a great meal whether you're dining in, taking out, or ordering online.
+                       <br>
+					   <br>
+					   <br>
+						At FastFood, we believe in using only the freshest ingredients to create our menu items. From our signature burgers and crispy fries to our freshly made salads and decadent desserts, every dish is crafted with care and attention to detail. We are passionate about delivering exceptional taste and value with every bite.
+						<br>
+						<br>
+						<br>
+						Our commitment to excellence extends beyond our food. We strive to offer an inviting and friendly atmosphere in all our locations, where families, friends, and individuals can relax and enjoy a great meal. Our dedicated team is here to make your experience memorable, providing outstanding service and ensuring your satisfaction every step of the way.
+						<br>
+						<br>
+						<br>
+						We are also proud to be a part of the community, regularly engaging in local events and supporting charitable initiatives. Our goal is to not only serve delicious food but also to contribute positively to the neighborhoods we call home.
+						<br>
+						<br>
+						Thank you for choosing FastFood. We look forward to serving you and becoming your favorite spot for fast, delicious meals!<br></p>
+				</div>
+		</div>
+	</div>
+
+
+<!-- ORDER -->
+	<div class="diffSection" id="portfolio_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Order</p></center>
+		
+	<section id="order" class="order-section">
+       
+        <form class="order-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <h3>Menu Items:</h3>
+            <div class="menu-item">
+                <label for="pizza">Pizza</label>
+                <select id="pizza" name="pizza">
+                    <option value="none">None</option>
+                    <option value="margherita">Margherita</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="vegetarian">Vegetarian</option>
+                </select>
+                <label for="pizza-qty">Quantity:</label>
+                <input type="number" id="pizza-qty" name="pizza-qty" min="0">
+            </div>
+            <div class="menu-item">
+                <label for="burger">Burger</label>
+                <select id="burger" name="burger">
+                    <option value="none">None</option>
+                    <option value="cheeseburger">Cheeseburger</option>
+                    <option value="veggie-burger">Veggie Burger</option>
+                    <option value="bacon-burger">Bacon Burger</option>
+                </select>
+                <label for="burger-qty">Quantity:</label>
+                <input type="number" id="burger-qty" name="burger-qty" min="0">
+            </div>
+            <div class="menu-item">
+                <label for="pasta">Pasta</label>
+                <select id="pasta" name="pasta">
+                    <option value="none">None</option>
+                    <option value="spaghetti">Spaghetti</option>
+                    <option value="fettuccine">Fettuccine</option>
+                    <option value="penne">Penne</option>
+                </select>
+                <label for="pasta-qty">Quantity:</label>
+                <input type="number" id="pasta-qty" name="pasta-qty" min="0">
+            </div>
+            <div class="menu-item">
+                <label for="salad">Salad</label>
+                <select id="salad" name="salad">
+                    <option value="none">None</option>
+                    <option value="caesar">Caesar</option>
+                    <option value="garden">Garden</option>
+                    <option value="greek">Greek</option>
+                </select>
+                <label for="salad-qty">Quantity:</label>
+                <input type="number" id="salad-qty" name="salad-qty" min="0">
+            </div>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+	
+<!-- CHEF -->
+	<div class="diffSection" id="team_section">
+		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;"> Our Chef's</p></center>
+		<div class="totalcard">
+			<div class="card">
+				<center><img src="images/chef 1.jpg"></center>
+				<center><div class="card-title">Danish Ali</div>
+				<div id="detail">
+					<p>“Roshan's are the backbone of our kitchen,dedicated to crafting exquisite dishes that delight your taste buds. With diverse backgrounds and expertise,and precision to every plate.“
+						</p>
+
+
+
+					
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images/Chef3.jpg"></center>
+				<center><div class="card-title">Sadia khan</div>
+				<div id="detail">
+					<p>“Chef Daniel's sweet creations have wowed diners for over a decade. He's a master of artisanal breads, desserts, and cakes, with a passion for using only the finest ingredients “</p>
+					
+				</center>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- Reviews by CUSTOMERS -->
+<div id="makeitfull">
+	<a href="#"><img src="images/icon/makeitfull.png"></a>
+</div>
+<div class="review">
+	<div class="diffSection" id="review_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">What the Customer's Say About Us?</p></center>
+	</div>
+	<div class="rev-container">
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/icon/cus1.jpg"><p>Kiswa Khan</p>
+			
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Great! I'd love to help with restaurant reviews. Can you please share which restaurant you'd like to review or find reviews for? Additionally, what type of review are you looking to read or write (e.g. food quality, service, ambiance)? That way, I can better assist you!
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/icon/cus4.jpg"><p>Muhammad Mahad</p>
+			
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					"Wow, what an incredible dining experience! The service was top-notch, with friendly and attentive staff who made us feel right at home. The food was simply divine - I highly recommend the signature dish, it was cooked to perfection. The ambiance was cozy and intimate, with a warm and inviting atmosphere. Overall, I would highly recommend this restaurant to anyone looking for a special night out. Can't wait to come back!"
+
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/icon/cus 3.jpg"><p>Muhammad Shahzaib</p>
+				
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					"Fantastic find! The food was creative, delicious, and beautifully presented. Service was friendly and knowledgeable. Only minor complaint was a slight delay in seating, but worth the wait. Highly recommend for a special occasion or foodie adventure!"
+
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/icon/cus2.jpg"><p>Samraa waseem</p>
+			
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					"Solid choice for a night out! Food was tasty, portions generous, and prices reasonable. Service was attentive, but could have been more personalized. Ambiance was lively and modern. Overall, a great spot for a casual dinner or group outing."
+
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contact">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Give Feedback</span>
+		<div class="shortdesc2">
+			<p>Please share your valuable feedback to us</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #FA4B37, #DF2771); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="10"><div class="marqu">“"One cannot think well, love well, sleep well, if one has not dined well." - Virginia Woolf
+		”</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<h2  style="width: 200px;">foo<span style="color: #DF2771;">D</span>iCious<span style="color: #DF2771;"></h2> 
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2024 Created By xyz ,All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png"> Sindhi Muslim <br>Bahardurabad, Karachi</p><br>
+				<p><img src="images/icon/phone.png"> +92-1234-567-890<br><img src="images/icon/mail.png">&nbsp; www.foodlicious.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
